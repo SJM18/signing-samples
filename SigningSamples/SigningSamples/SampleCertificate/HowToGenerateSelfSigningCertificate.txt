@@ -1,0 +1,4 @@
+﻿openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout Sample.key -out Sample.crt
+openssl pkcs12 -export -out Sample.pfx -inkey Sample.key -in Sample.crt
+
+The PFX's password is "sample"
