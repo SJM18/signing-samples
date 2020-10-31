@@ -2,5 +2,7 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
+/.vs
+/SigningSamples/.vs
 /SigningSamples/SigningSamples/bin
 /SigningSamples/SigningSamples/obj
