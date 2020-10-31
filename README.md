@@ -6,3 +6,5 @@ The solution only use the base identity and encryption Microsoft libraries.
 
 Currently supported signings:
 - JWT signing
+- XML signing
+- XML signing with ds: prefix at signatures
