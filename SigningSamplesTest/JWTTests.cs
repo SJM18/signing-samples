@@ -1,6 +1,7 @@
 using NUnit.Framework;
 using SigningSamples;
 using System.IdentityModel.Tokens.Jwt;
+using System.IO;
 
 namespace SigningSamplesTest
 {
@@ -11,7 +12,7 @@ namespace SigningSamplesTest
         [SetUp]
         public void Setup()
         {
-            pfxPath = "SampleCertificate\\Sample-20221030.pfx";
+            pfxPath = Path.Combine("SampleCertificate", "Sample-20221030.pfx");
         }
 
         [Test]

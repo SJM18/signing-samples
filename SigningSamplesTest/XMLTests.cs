@@ -2,6 +2,7 @@
 using SigningSamples;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace SigningSamplesTest
         [SetUp]
         public void Setup()
         {
-            pfxPath = "SampleCertificate\\Sample-20221030.pfx";
+            pfxPath = Path.Combine("SampleCertificate", "Sample-20221030.pfx");
         }
 
         [Test]
