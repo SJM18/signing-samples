@@ -6,7 +6,7 @@ namespace SigningSamples
 {
     interface ISigningSample
     {
-        public void ReadCertification();
+        public void ReadCertification(string pfxPath);
 
         public string Sign(string input);
 
