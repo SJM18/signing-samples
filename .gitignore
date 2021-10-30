@@ -4,5 +4,7 @@
 
 /.vs
 /SigningSamples/.vs
-/SigningSamples/SigningSamples/bin
-/SigningSamples/SigningSamples/obj
+/SigningSamples/bin/Debug
+/SigningSamples/obj
+/SigningSamplesTest/obj
+/SigningSamplesTest/bin
