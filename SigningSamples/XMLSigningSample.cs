@@ -15,9 +15,9 @@ namespace SigningSamples
         private bool c14 = true;
         private bool useIncludedCertificate = true;
 
-        public void ReadCertification()
+        public void ReadCertification(string pfxPath)
         {
-            var path = Path.Combine(Directory.GetCurrentDirectory(), "SampleCertificate\\Sample.pfx");
+            var path = Path.Combine(Directory.GetCurrentDirectory(), pfxPath);
 
             this.x509Certificate2 = new X509Certificate2(path, "sample", X509KeyStorageFlags.MachineKeySet);
         }

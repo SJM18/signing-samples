@@ -17,9 +17,9 @@ namespace SigningSamples
         private static readonly string Audience = "SampleAudience";
         private static readonly string Subject = "SampleSubject";
 
-        public void ReadCertification()
+        public void ReadCertification(string pfxPath)
         {
-            var path = Path.Combine(Directory.GetCurrentDirectory(), "SampleCertificate\\Sample.pfx");
+            var path = Path.Combine(Directory.GetCurrentDirectory(), pfxPath);
 
             X509Certificate2 x509Certificate2 = new X509Certificate2(path, "sample", X509KeyStorageFlags.MachineKeySet);
 
@@ -146,7 +146,8 @@ namespace SigningSamples
             }
             catch (Exception ex)
             {
-                throw ex;
+                Console.WriteLine("Unable to validate JWT token, exception: " + ex.ToString());
+                throw;
             }
         }
     }
