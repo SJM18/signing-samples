@@ -146,7 +146,8 @@ namespace SigningSamples
             }
             catch (Exception ex)
             {
-                throw ex;
+                Console.WriteLine("Unable to validate JWT token, exception: " + ex.ToString());
+                throw;
             }
         }
     }
