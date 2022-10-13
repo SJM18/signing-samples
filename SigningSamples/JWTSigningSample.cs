@@ -23,7 +23,14 @@ namespace SigningSamples
 
             X509Certificate2 x509Certificate2 = new X509Certificate2(path, "sample", X509KeyStorageFlags.MachineKeySet);
 
-            this.securityKey = new X509SecurityKey(x509Certificate2);
+            var securityKey = new X509SecurityKey(x509Certificate2);
+
+            SetSecurityKey(securityKey);
+        }
+
+        public void SetSecurityKey(SecurityKey securityKey)
+        {
+            this.securityKey = securityKey;
         }
 
         public string Sign(string input)
