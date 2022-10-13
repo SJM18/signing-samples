@@ -20,7 +20,7 @@ namespace SigningSamplesTest
         }
 
         [Test]
-        public void SignAdnVerify()
+        public void SignAndVerify()
         {
             StringBuilder sbds = new StringBuilder();
 
