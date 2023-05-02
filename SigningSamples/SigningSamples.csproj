@@ -10,7 +10,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.14.0" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.14.0" />
-    <PackageReference Include="System.Security.Cryptography.Xml" Version="5.0.0" />
+    <PackageReference Include="System.Security.Cryptography.Xml" Version="6.0.0" />
   </ItemGroup>
 
   <ItemGroup>
