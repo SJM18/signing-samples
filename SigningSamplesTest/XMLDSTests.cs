@@ -16,7 +16,7 @@ namespace SigningSamplesTest
         [SetUp]
         public void Setup()
         {
-            pfxPath = Path.Combine("SampleCertificate", "Sample-20221030.pfx");
+            pfxPath = Path.Combine("SampleCertificate", "Sample-20331012.pfx");
         }
 
         [Test]
